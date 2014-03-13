@@ -12,6 +12,11 @@
 						echo ' value="' . htmlspecialchars($this->data['username']) . '"';
 					} ?>><br>
         Password<br><input type='password' name="password"><br>
+<!--
+error code: <?php echo $this->t('{errors:descr_' . $this->data['errorcode'] . '}'); ?>
+error title: <?php echo $this->t('{login:error_header}'); ?>
+error title: <?php echo $this->t('{errors:title_' . $this->data['errorcode'] . '}'); ?>
+-->
 <?php
 foreach ($this->data['stateparams'] as $name => $value) {
 	echo('<input type="hidden" name="' . htmlspecialchars($name) . '" value="' . htmlspecialchars($value) . '" />');
