@@ -12,6 +12,11 @@
 						echo ' value="' . htmlspecialchars($this->data['username']) . '"';
 					} ?>><br>
         Password<br><input type='password' name="password"><br>
+<?php
+foreach ($this->data['stateparams'] as $name => $value) {
+	echo('<input type="hidden" name="' . htmlspecialchars($name) . '" value="' . htmlspecialchars($value) . '" />');
+}
+?>
         <input type='submit' value='<?php echo $this->t('{login:login_button}'); ?>'><br>
     </div>
 </div>
