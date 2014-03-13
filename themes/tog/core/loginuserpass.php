@@ -8,9 +8,11 @@
 <form class="form-signin" method="post" action="?">
 <div class='login-box'>
     <div class='login-form'>
-        Username<br><input type='email'><br>
-        Password<br><input type='password'><br>
-        <input type='submit' value='Login'><br>
+        Username<br><input type='text' name="username"<?php if (isset($this->data['username'])) {
+						echo ' value="' . htmlspecialchars($this->data['username']) . '"';
+					} ?>><br>
+        Password<br><input type='password' name="password"><br>
+        <input type='submit' value='<?php echo $this->t('{login:login_button}'); ?>'><br>
     </div>
 </div>
 </form>
