@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>PVV login</title>
-    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='<?php echo SimpleSAML_Module::getModuleURL('pvv/css/tog.css'); ?>'>
 </head>
 <body>
 <div class='login-box'>
