@@ -7,7 +7,7 @@
 <body>
 <form class="form-signin" method="post" action="?">
 <div class='login-box'>
-    <div class='login-form' <?php if($this->data['errorcode']){echo 'style="border: 1px solid red"'}?>>
+    <div class='login-form' <?php if($this->data['errorcode']){echo 'style="border: 1px solid red;"';}?>>
         Username<br><input type='text' name="username"<?php if (isset($this->data['username'])) {
 						echo ' value="' . htmlspecialchars($this->data['username']) . '"';
 					} ?>><br>
