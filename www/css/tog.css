@@ -1,5 +1,5 @@
 body {
-    background: url('train.jpg');
+    background: url('../images/train.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -23,7 +23,7 @@ body {
     margin-right: auto;
 }
 
-input[type=email] {
+input[type=text] {
     padding: 5px;
     border: 2px;
     solid: #ccc;
